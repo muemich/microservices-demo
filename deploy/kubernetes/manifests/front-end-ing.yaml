@@ -1,9 +1,8 @@
-apiVersion: apps/v1
+apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
-  name: socks-ingress
-  annotations:
-    kubernetes.io/ingress.class: nginx
+  name: front-end-ingress
+  namespace: sock-shop
 spec:
   rules:
   - http:
